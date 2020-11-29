@@ -70,6 +70,7 @@ class GMongo {
   GMongo(String host, MongoOptions opts) {
     this.mongo = new Mongo(host, opts)
   }
+  System.out.print("just an update");
 
   GMongo( List<ServerAddress> replicaSetSeeds, MongoOptions opts ) {
     this.mongo = new Mongo(replicaSetSeeds, opts)
