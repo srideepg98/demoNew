@@ -71,6 +71,7 @@ class GMongo {
     this.mongo = new Mongo(host, opts)
   }
   System.out.print("just an update");
+  System.out.print("NEW UPDATE ");
 
   GMongo( List<ServerAddress> replicaSetSeeds, MongoOptions opts ) {
     this.mongo = new Mongo(replicaSetSeeds, opts)
